@@ -2,8 +2,7 @@
 
 This is a copy of Smilei https://smileipic.github.io/Smilei built on fedora
 
-DockerHub image
-^^^^^^^^^^^^^^^
+## DockerHub image
 
 ```bash
 docker pull iltommi/docker-smilei
@@ -11,8 +10,8 @@ docker pull iltommi/docker-smilei
 docker run -v $(pwd):/mnt -i -t iltommi/docker-smilei /bin/bash
 ````
 
-Local image
-^^^^^^^^^^^
+## Local image
+
 ```bash
 git clone https://github.com/iltommi/docker-smilei.git
 cd docker-smilei
@@ -22,9 +21,8 @@ docker run -v $(pwd):/mnt -i -t docker-smilei /bin/bash
 ````
 
 
-
-Example
-^^^^^^^
+ 
+## Example
 
 ```bash
 cd /mnt
@@ -42,8 +40,7 @@ exit iPython
 exit docker
 
 
-Reopen stopped container
-^^^^^^^^^^^^^^^^^^^^^^^^
+## Reopen stopped container
 
 ```bash
 docker ps -a
