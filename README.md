@@ -2,7 +2,7 @@
 
 This is a copy of Smilei https://smileipic.github.io/Smilei built on fedora
 
-```
+```bash
 docker pull iltommi/docker-smilei
 
 docker run -v $(pwd):/mnt -i -t iltommi/docker-smilei /bin/bash
@@ -13,7 +13,8 @@ ipython
 import happi
 s=Smilei()
 ```
-………
+
+----
 
 exit iPython
 exit docker
