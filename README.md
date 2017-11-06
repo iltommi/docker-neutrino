@@ -8,13 +8,16 @@ docker pull iltommi/docker-smilei
 docker run -v $(pwd):/mnt -i -t iltommi/docker-smilei /bin/bash
 mpirun -n 4 smilei /Smilei/benchmarks/tst1d_1_clb_explosion.py
 
-ipython -i /Smilei/scripts/Diagnostics.py
-import matplotlib; matplotlib.use('Agg'); from Smilei import *
+ipython
+
+import happi
 s=Smilei()
 ```
 ………
-exit Python
+
+exit iPython
 exit docker
+
 ```
 docker ps -a
 CONTAINER ID   IMAGE                      COMMAND          CREATED             STATUS                      PORTS    NAMES
