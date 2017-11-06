@@ -9,7 +9,7 @@ RUN echo "export PATH=/usr/lib64/openmpi/bin/:$PATH" >> ~/.bashrc;  \
     
 RUN source ~/.bashrc ;                                     \
     git clone https://github.com/SmileiPIC/Smilei.git ;    \
-    cd Smilei && make -j$(nproc) && make install_python ;  \
+    cd Smilei && make -j$(nproc) && make happi ;           \
     cp smilei /usr/local/bin
 
 
