@@ -4,48 +4,14 @@ This is a copy of Smilei https://smileipic.github.io/Smilei built on fedora
 
 ## DockerHub image
 
+To get the Smilei docker image:
+
 ```bash
 docker pull iltommi/docker-smilei
+```
 
-docker run -v $(pwd):/mnt -i -t iltommi/docker-smilei /bin/bash
-````
-
-## Local image
-
-```bash
-git clone https://github.com/iltommi/docker-smilei.git
-cd docker-smilei
-docker build -t smilei docker-smilei
-
-docker run -v $(pwd):/mnt -i -t docker-smilei /bin/bash
-````
-
-
+To lauch the image and access the content of the local directory (`pwd`) on the docker image (on `/mnt`):
+```
+docker run -v $(pwd):/mnt -i -t iltommi/docker-smilei bash
+```
  
-## Example
-
-```bash
-cd /mnt
-mpirun -n 4 smilei /Smilei/benchmarks/tst1d_1_clb_explosion.py
-
-ipython
-
-import happi
-s=Smilei()
-```
-
-----
-
-exit iPython
-exit docker
-
-
-## Reopen stopped container
-
-```bash
-docker ps -a
-CONTAINER ID   IMAGE                      [...]  NAMES
-d5b7467d9746   iltommi/docker-smilei      [...]  fervent_nobel
-
-docker start -i fervent_nobel
-```
