@@ -14,4 +14,4 @@ To lauch the image and access the content of the local directory (`pwd`) on the 
 ```
 docker run -v $(pwd):/mnt -i -t iltommi/docker-smilei bash
 ```
- 
+If you want to run using `mpirun` do not forget to `module load mpi`  
