@@ -2,7 +2,7 @@ FROM fedora:latest
 
 # install packages
 RUN dnf -y update; \
-    dnf install -y gcc-c++ hdf5-openmpi hdf5-openmpi-devel openmpi-devel git which findutils python python-devel; \
+    dnf install -y make gcc-c++ hdf5-openmpi hdf5-openmpi-devel openmpi-devel git which findutils python python-devel; \
     dnf install -y h5py ipython python2-pint python2-sphinx python2-matplotlib 
 
 # build Smilei    
